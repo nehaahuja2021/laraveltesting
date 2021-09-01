@@ -13,19 +13,24 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public  function test_fizz()
+   /* public  function test_fizz()
     {
-         $this->assertEquals( "fizz", User::fizzbuzz(13),"fizz is working");
+         $this->assertEquals( "fizz", User::fizzbuzz(9),"fizz is working");
     }
     
     public function test_fizzbuzz()
     {
-        $this->assertEquals( "fizzbuzz", User::fizzbuzz(25),"buzz is working");
+        $this->assertEquals( "fizzbuzz", User::fizzbuzz(30),"fizzbuzz is working");
     }
     public function test_buzz()
     {
-        $this->assertEquals( "buzz", User::fizzbuzz(23),"buzz is working");
+        $this->assertEquals( "buzz", User::fizzbuzz(25),"buzz is working");
     }
-
+*/
+    public function test_numberToRoman()
+    {
+        $this->assertEquals("success", 
+        User::numberToRoman(25),"numroman is working");
+    }
 
 }
